@@ -9,13 +9,11 @@ import { google } from "../../assets";
 const Signup = () => {
   const validate = Yup.object({
     email: Yup.string().email("Email is invalid").required("Email is Required"),
-    name: Yup.string().required("Name is Required"),
     password: Yup.string(),
   });
   return (
     <>
       <div className="signin-container">
-        {/* <div className="signin-container-content1"></div> */}
         <div className="signin-container-content2">
           <div className="signin-container-content2-box1">
             <h1>Sign in</h1>
@@ -75,20 +73,3 @@ const Signup = () => {
 };
 
 export default Signup;
-
-{
-  /* <div className="signup_container-content2-box1">
-            <h1>Sign in</h1>
-            <div className="signup_container-content2-box1-content">
-              <div className="signup_container-content2-box1-content-items">
-                <label>Email</label>
-                <input type="email" placeholder="example@email.com" />
-              </div>
-              <div className="signup_container-content2-box1-content-items">
-                <label>Password</label>
-                <input type="password" placeholder="*******" />
-              </div>
-              <div className="signup_container-content2-box1-content-forget"></div>
-            </div>
-          </div> */
-}

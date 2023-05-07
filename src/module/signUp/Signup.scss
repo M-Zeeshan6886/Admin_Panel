@@ -4,10 +4,6 @@
 .signin-container {
   width: 100%;
   height: 100vh;
-  // &-content1 {
-  //   height: 86px;
-  //   background-color: yellow;
-  // }
   &-content2 {
     width: 100vw;
     height: 100vh;
@@ -20,14 +16,8 @@
     justify-content: center;
     align-items: center;
     &-box1 {
-      // padding: 2.9rem;
-      // background-color: white;
-      // @include respond(phone) {
-      //   width: 100%;
-      // }
       & > h1 {
         font-family: "Lato";
-        font-style: normal;
         font-weight: 700;
         font-size: 2.9rem;
         line-height: 35px;
@@ -58,13 +48,13 @@
         & > p {
           margin-top: 29px;
           font-weight: 400;
-          font-size: 16.9312px;
+          font-size: 1.6rem;
           line-height: 20px;
           text-align: center;
           color: $blacktext;
-          //   & > Link {
-
-          //   }
+          // @include respond(phone) {
+          //   font-size: 1.4rem;
+          // }
         }
       }
       &-btnbox {
@@ -72,6 +62,9 @@
         height: auto;
         padding: 0.5rem 2.9rem;
         // background-color: palevioletred;
+        @include respond(phone) {
+          padding: 2rem;
+        }
         &-continue {
           width: 100%;
           height: auto;
@@ -82,18 +75,17 @@
           //   background-color: aqua;
           & > hr {
             width: 85.87px;
-            border: 2.41875px solid $lightnevi;
+            border: 2px solid $lightnevi;
           }
           & > p {
             font-weight: 400;
-            font-size: 16.9312px;
+            font-size: 1.6rem;
             line-height: 140%;
             color: $lightnevi;
           }
         }
         & > button {
           width: 100%;
-          height: auto;
           padding: 0.7rem 0rem;
           margin-top: 30px;
           border: 1.20938px solid $lightnevi;
