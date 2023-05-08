@@ -1,23 +1,23 @@
 import React from "react";
-import "./Signup.scss";
+import Styles from "./Signin.module.scss";
 import FormInput from "../../FormInput/FormInput";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { google } from "../../assets";
 
-const Signup = () => {
+const Signin = () => {
   const validate = Yup.object({
     email: Yup.string().email("Email is invalid").required("Email is Required"),
     password: Yup.string(),
   });
   return (
     <>
-      <div className="signin-container">
-        <div className="signin-container-content2">
-          <div className="signin-container-content2-box1">
+      <div className={Styles.signin_container}>
+        <div className={Styles.signin_container_content2}>
+          <div className={Styles.signin_container_content2_box1}>
             <h1>Sign in</h1>
-            <div className="signin-container-content2-box1-content">
+            <div className={Styles.signin_container_content2_box1_content}>
               <Formik
                 initialValues={{
                   email: "",
@@ -40,10 +40,19 @@ const Signup = () => {
                         type="password"
                         place="**************"
                       />
-                      <Link to="/forgetpassword" className="forgetpass">
+                      <Link
+                        to="/forgetpassword"
+                        className={
+                          Styles.signin_container_content2_box1_content_forgetpass
+                        }
+                      >
                         Forget password ?
                       </Link>
-                      <button className="signin-container-content2-box1-content-btn">
+                      <button
+                        className={
+                          Styles.signin_container_content2_box1_content_btn
+                        }
+                      >
                         Login
                       </button>
                     </Form>
@@ -51,15 +60,18 @@ const Signup = () => {
                 )}
               </Formik>
             </div>
-            <div className="signin-container-content2-box1-btnbox">
-              <div className="signin-container-content2-box1-btnbox-continue">
+            <div className={Styles.signin_container_content2_box1_btnbox}>
+              <div
+                className={
+                  Styles.signin_container_content2_box1_btnbox_continue
+                }
+              >
                 <hr />
                 <p>or continue with</p>
                 <hr />
               </div>
-
               <button>
-                <Link to="/" className="googlelink">
+                <Link to="/" className={Styles.googlelink}>
                   <img src={google} alt="google" />
                   <p>Continue with google</p>
                 </Link>
@@ -71,5 +83,4 @@ const Signup = () => {
     </>
   );
 };
-
-export default Signup;
+export default Signin;
