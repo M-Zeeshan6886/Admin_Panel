@@ -3,11 +3,10 @@
 
 .container {
   display: flex;
-//   align-items: center;
   &_left {
     width: 17rem;
     height: 100vh;
-    background-color: lightcoral;
+    // background-color: ;
   }
   &_right {
     height: auto;

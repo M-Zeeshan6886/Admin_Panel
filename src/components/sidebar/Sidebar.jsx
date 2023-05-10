@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Sidebar.module.scss";
 import {
-    avatar,
+  avatar,
   dashboardWithoutBackground,
   logo,
   logout,
@@ -10,10 +10,17 @@ import {
   subscription,
   supportRequest,
 } from "../../assets";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const getColor = (current) => {
+    if (location.pathname === current) {
+      return "#01C8FB";
+    }
+  };
   const data = [
     {
       path: "/dashboard",
@@ -58,7 +65,12 @@ const Sidebar = () => {
                     <span className={styles.icon}>
                       <img src={item.icon} alt="Icon" />
                     </span>
-                    <span className={styles.text}>{item.title}</span>
+                    <span
+                      className={styles.text}
+                      style={{ color: getColor(item.path) }}
+                    >
+                      {item.title}
+                    </span>
                   </Link>
                 </li>
               );
