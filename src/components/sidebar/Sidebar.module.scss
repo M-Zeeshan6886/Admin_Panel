@@ -1,0 +1,74 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.sidebar {
+  //   width: 25%;
+  height: 100vh;
+  padding: 0.5rem 0rem;
+  position: relative;
+  //   background-color: aqua;
+  &_top {
+    display: flex;
+    justify-content: center;
+    padding: 2.4rem 0rem;
+    // background-color: lawngreen;
+  }
+  &_middle {
+    // background-color: aqua;
+    margin-top: 5rem;
+    ul {
+      list-style-type: none;
+      cursor: pointer;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        .icon {
+          padding-right: 1.3rem;
+          padding-left: 1rem;
+          width: 5rem;
+          height: 5rem;
+          // background-color: red;
+        }
+        .text {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.3rem;
+          color: #858585;
+          padding-top: -5rem;
+        }
+      }
+    }
+  }
+  &_bottom {
+    // position:absolute;
+    // // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // padding: .5rem 0rem;
+    // background-color: palegreen;
+    cursor: pointer;
+    position: fixed;
+    margin: 0rem 0rem 2.5rem 1.5rem;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .name {
+      font-family: "DM Sans";
+      color: $lightnevi;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    .scale {
+      color: #8a8a8a;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.8rem;
+    }
+  }
+}

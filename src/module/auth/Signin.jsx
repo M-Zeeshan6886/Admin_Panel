@@ -3,10 +3,11 @@ import Styles from "./Signin.module.scss";
 import FormInput from "../../FormInput/FormInput";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { google } from "../../assets";
 
 const Signin = () => {
+  const navigate = useNavigate();
   const validate = Yup.object({
     email: Yup.string().email("Email is invalid").required("Email is Required"),
     password: Yup.string(),
@@ -52,6 +53,7 @@ const Signin = () => {
                         className={
                           Styles.signin_container_content2_box1_content_btn
                         }
+                        onClick={() => navigate("/dashboard")}
                       >
                         Login
                       </button>
