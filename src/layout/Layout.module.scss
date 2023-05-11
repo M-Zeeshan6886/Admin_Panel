@@ -1,16 +1,35 @@
 @import "../Sass/mixin";
 @import "../Sass/variables";
 
+// ***************** Responsive Bar *****************************
+.responsiveBar {
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
+// ***************** Desktop View *****************************
 .container {
   display: flex;
   &_left {
-    width: 17rem;
+    width: 12%;
     height: 100vh;
     // background-color: ;
+    @include respond(tab-port) {
+      display: none;
+    }
   }
   &_right {
+    width: 88%;
     height: auto;
     padding: 0.5rem 0rem;
-    // background-color: peru;
+    background-color: peru;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }

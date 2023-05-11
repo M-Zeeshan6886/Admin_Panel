@@ -17,24 +17,39 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-      @media only screen and (max-width: 37.5em) {
-        @content;
-      }
-    };
-    @if $breakpoint == tab-port {
-      @media only screen and (max-width: 56.25em) {
-        @content;
-      } 
-    };
-    @if $breakpoint == tab-land {
-      @media only screen and (max-width: 75em) {
-        @content;
-      }
-    };
-    @if $breakpoint == big-desktop {
-      @media only screen and (min-width: 112.5em) {
-        @content;
-      }
-    };
-  };
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+// // flex
+// @mixin flex($dir: row, $item: center, $content: space-between, $gap: 0rem) {
+//   display: flex;
+//   flex-direction: $dir;
+//   align-items: $item;
+//   justify-content: $content;
+//   gap: $gap;
+// }
+
+// @mixin center {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
