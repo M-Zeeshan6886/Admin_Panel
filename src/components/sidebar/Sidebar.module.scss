@@ -2,11 +2,12 @@
 @import "../../Sass/variables";
 
 .sidebar {
+  // width: 100%;
   height: 100vh;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0.5rem;
   position: relative;
-  //   background-color: aqua;
- 
+  background-color: white;
+
   &_top {
     display: flex;
     justify-content: center;

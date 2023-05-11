@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from "./Manageempolyee.module.scss"
 const Manageempolyee = () => {
   return (
-    <div>Manageempolyee</div>
+    <div className={styles.manage_container}>Manageempolyee</div>
   )
 }
 

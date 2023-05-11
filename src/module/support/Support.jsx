@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import styles from "./Support.module.scss";
 
 const Support = () => {
   return (
-    <div>Support</div>
+    <>
+    <div className={styles.support_container}>Support</div>
+    </>
   )
 }
 

@@ -41,11 +41,34 @@
 //   }
 // }
 
+// **************************** Responsive container Modal *****************************
+
+.responsive_container {
+  background-color: #5c718d71;
+  // opacity: 0.2;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
+  &_content {
+    width: 35%;
+  }
+}
+
+// **************************** Responsive Bar *****************************
 .responsive {
   width: 100%;
   height: auto;
   padding: 1.5rem 2rem;
-  // background-color: red;
+  background-color: white;
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
   &_content {
     display: flex;
     align-items: center;

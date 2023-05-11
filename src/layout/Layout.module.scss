@@ -6,28 +6,24 @@
   width: 100%;
   height: auto;
   background-color: aqua;
-  display: none;
-  @include respond(tab-port) {
-    display: block;
-  }
+  // display: none;
 }
 
 // ***************** Desktop View *****************************
 .container {
   display: flex;
   &_left {
-    width: 12%;
+    // width: 12%;
     height: 100vh;
-    // background-color: ;
     @include respond(tab-port) {
       display: none;
     }
   }
   &_right {
-    width: 88%;
+  width:88.8%;
     height: auto;
-    padding: 0.5rem 0rem;
-    background-color: peru;
+    // padding: 0.5rem 0rem;
+    // background-color: peru;
     @include respond(tab-port) {
       width: 100%;
     }
