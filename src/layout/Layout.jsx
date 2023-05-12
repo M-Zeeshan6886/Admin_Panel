@@ -10,9 +10,11 @@ const Layout = () => {
   // };
   return (
     <>
-    <div className={styles.responsiveBar}>
-      <Header />
-    </div>
+      {/* ******************** Responsive Navbar ************************** */}
+      <div className={styles.responsiveBar}>
+        <Header />
+      </div>
+      {/* ******************** Desktop View ************************** */}
       <div className={styles.container}>
         <div className={styles.container_left}>
           <Sidebar />

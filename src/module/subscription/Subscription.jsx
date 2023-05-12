@@ -3,7 +3,7 @@ import styles from "./Subscription.module.scss";
 const Subscription = () => {
   return (
     <>
-      <div className={styles.subscription_container}>Subscription</div>;
+      <div className={styles.subscription_container}>Subscription</div>
     </>
   );
 };
