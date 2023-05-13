@@ -55,6 +55,23 @@
         @include respond(phone) {
           width: 100%;
         }
+        &_content {
+          width: 90%;
+          margin: auto;
+          &_menu {
+            padding: 2rem 0rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1 {
+              font-weight: 600;
+              font-size: 1.8rem;
+              line-height: 23px;
+              color: #06152b;
+              opacity: 0.7;
+            }
+          }
+        }
       }
       &_right {
         width: 42.5rem;
@@ -62,11 +79,26 @@
         padding: 0.5rem 0rem;
         background: #ffffff;
         border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
         @include respond(phone) {
           width: 100%;
+        }
+        &_content {
+          width: 90%;
+          margin: auto;
+          &_menu {
+            padding: 2rem 0rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1 {
+              font-weight: 600;
+              font-size: 1.8rem;
+              line-height: 23px;
+              color: #06152b;
+              opacity: 0.7;
+            }
+          }
         }
       }
     }

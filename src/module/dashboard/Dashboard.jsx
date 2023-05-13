@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Dashboard.module.scss";
-import { business, heart } from "../../assets";
+import { business, graphMenu, heart } from "../../assets";
 import Grid from "@mui/material/Grid";
 import { Chart } from "chart.js";
 import {
@@ -24,7 +24,8 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
 
 Chart.register(ArcElement);
@@ -131,27 +132,55 @@ const Dashboard = () => {
       <div className={styles.dashboard_container_content3}>
         <div className={styles.dashboard_container_content3_chartbox}>
           <div className={styles.dashboard_container_content3_chartbox_left}>
-            <Line
-              data={{
-                labels: lineGraphLabels,
-                datasets: [
-                  {
-                    data: [10, 20, 30, 42, 51, 82, 31, 59, 61, 73, 91, 58],
-                    type: "line",
-                    order: 2,
-                    borderColor: "#01CAFD",
-                    backgroundColor: "#01CAFD",
-                    pointBackgroundColor: "#2B4465",
-                    tension: 0.4,
-                    fill: true,
-                  },
-                ],
-              }}
-              options={options}
-            ></Line>
+            <div
+              className={
+                styles.dashboard_container_content3_chartbox_left_content
+              }
+            >
+              <div
+                className={
+                  styles.dashboard_container_content3_chartbox_left_content_menu
+                }
+              >
+                <h1>Monthly user data</h1>
+                <img src={graphMenu} alt="Icon" />
+              </div>
+              <Line
+                data={{
+                  labels: lineGraphLabels,
+                  datasets: [
+                    {
+                      data: [10, 20, 30, 42, 51, 82, 31, 59, 61, 73, 91, 58],
+                      type: "line",
+                      order: 2,
+                      borderColor: "#01CAFD",
+                      // backgroundColor: "#01CAFD",
+                      pointBackgroundColor: "#2B4465",
+                      tension: 0.4,
+                      fill: true,
+                    },
+                  ],
+                }}
+                options={options}
+              ></Line>
+            </div>
           </div>
           <div className={styles.dashboard_container_content3_chartbox_right}>
-            <Pie data={data} className={styles.piechart} />
+            <div
+              className={
+                styles.dashboard_container_content3_chartbox_right_content
+              }
+            >
+              <div
+                className={
+                  styles.dashboard_container_content3_chartbox_right_content_menu
+                }
+              >
+                <h1>Registered User Pie Chart</h1>
+                <img src={graphMenu} alt="Icon" />
+              </div>
+              <Pie data={data} className={styles.piechart} />
+            </div>
           </div>
         </div>
       </div>
