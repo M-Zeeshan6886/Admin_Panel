@@ -1,46 +1,6 @@
 @import "../../Sass/mixin";
 @import "../../Sass/variables";
 
-// .bgWrapper {
-//   background-color: rgba($color: $lightnevi, $alpha: 0.2);
-//   position: fixed;
-//   inset: 0;
-//   z-index: 99;
-//   display: none;
-//   backdrop-filter: blur(5px);
-//   display: none;
-//   .show {
-//     display: block;
-//   }
-// }
-
-// .container {
-//   padding: $padding;
-//   display: none;
-//   // @include desktop {
-//   //   @include flex(row, center, space-between);
-//   // }
-//   & > .left {
-//     & > a {
-//       & > img {
-//         padding-top: $spacing-unit * 2;
-//         width: 15rem;
-//       }
-//     }
-//   }
-//   & > .right {
-//     & > button {
-//       background-color: transparent;
-//       border: none;
-//       outline: none;
-//       border-radius: 0.5rem;
-//       font-size: 1.3rem;
-//       cursor: pointer;
-//       padding: 0.5rem 1rem;
-//     }
-//   }
-// }
-
 // **************************** Responsive container Modal *****************************
 
 .responsive_container {
