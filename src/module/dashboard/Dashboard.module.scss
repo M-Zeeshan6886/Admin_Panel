@@ -2,6 +2,7 @@
 @import "../../Sass/variables";
 
 .dashboard_container {
+  padding: 1rem 0rem;
   width: 100%;
   height: auto;
   background-color: #15c2eda0;
@@ -36,6 +37,7 @@
     // background-color: palevioletred;
     &_chartbox {
       display: flex;
+      justify-content: space-between;
       & > *:not(:first-child) {
         margin-left: 3rem;
         @include respond(phone) {
@@ -47,7 +49,7 @@
         flex-direction: column;
       }
       &_left {
-        width: 74.2rem;
+        width: 78.2rem;
         height: auto;
         padding: 0.5rem 0rem;
         background: #ffffff;
@@ -74,7 +76,7 @@
         }
       }
       &_right {
-        width: 42.5rem;
+        width: 45.5rem;
         height: auto;
         padding: 0.5rem 0rem;
         background: #ffffff;
@@ -103,6 +105,100 @@
       }
     }
   }
+  &_content4 {
+    width: 95%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 0.5rem 0rem;
+    background: #ffffff;
+    border-radius: 10px;
+    &_table {
+      width: 95%;
+      margin: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lemonchiffon;
+      &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 23px;
+          color: #2b4465;
+          opacity: 0.7;
+        }
+        &_inputfield {
+          display: flex;
+          align-items: center;
+          input {
+            padding: 0.5rem 1rem;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #8a8a8a;
+            &::placeholder {
+              font-size: 1rem;
+              font-weight: 400;
+              color: #8a8a8a;
+              line-height: 12px;
+            }
+          }
+          img {
+            width: 14px;
+            height: 14px;
+            margin-left: -1.5rem;
+          }
+        }
+      }
+      &_content {
+        width: 90%;
+        margin: auto;
+        padding: 0.5rem 0rem;
+        background-color: #ffffff;
+        table {
+          width: 100%;
+          background-color: white;
+          border-collapse: collapse;
+          th,
+          td {
+            padding: 0.8rem;
+            text-align: left;
+          }
+          thead th {
+            // border-bottom: 0.5px solid #06152b;
+            color: #06152b;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 16px;
+            color: #06152b;
+          }
+          tbody td {
+            color: #2b4465;
+            font-weight: 400;
+            font-size: 1rem;
+          }
+          td:nth-child(2) {
+            display: flex;
+            align-items: center;
+          }
+          h6 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 16px;
+            color: #2b4465;
+            margin-left: 1.5rem;
+          }
+          span {
+            padding: 0.7rem 2.4rem;
+            background: #33333366;
+            // opacity: 0.2;
+            border-radius: 8px;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
 }
 .analysis_card {
   //    width: 250px;
@@ -117,20 +213,20 @@
       margin-left: 2rem;
     }
     &_right {
-      h3 {
+      p:nth-child(1) {
         color: #06152b;
         font-weight: 700;
         font-size: 2.2rem;
         margin-bottom: 0.1rem;
       }
-      h6 {
+      p:nth-child(2) {
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 19px;
         color: #06152b;
         opacity: 0.7;
       }
-      p {
+      p:nth-child(3) {
         font-weight: 400;
         font-size: 1rem;
         line-height: 13px;
@@ -145,14 +241,14 @@
           margin-right: 0.5rem;
         }
       }
-      //   p:nth-child(3) {
-      //     font-weight: 400;
-      //     font-size: 0.7rem;
-      //     opacity: 0.7;
-      //     span {
-      //       color: #f20a0a;
-      //     }
-      //   }
+        // p:nth-child(4) {
+        //   font-weight: 400;
+        //   font-size: 0.7rem;
+        //   opacity: 0.7;
+        //   span {
+        //     color: #f20a0a;
+        //   }
+        // }
     }
   }
 }

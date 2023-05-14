@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./Dashboard.module.scss";
-import { business, graphMenu, heart } from "../../assets";
+import {
+  business,
+  graphMenu,
+  heart,
+  search,
+  tableUserImage,
+} from "../../assets";
 import Grid from "@mui/material/Grid";
 import { Chart } from "chart.js";
 import {
@@ -115,8 +121,8 @@ const Dashboard = () => {
                       <img src={data.image} alt="image" />
                     </div>
                     <div className={styles.analysis_card_content_right}>
-                      <h3>{data.number}</h3>
-                      <h6>{data.type}</h6>
+                      <p>{data.number}</p>
+                      <p>{data.type}</p>
                       <p>
                         <span>{data.perc}</span>
                         {data.desc}
@@ -179,9 +185,87 @@ const Dashboard = () => {
                 <h1>Registered User Pie Chart</h1>
                 <img src={graphMenu} alt="Icon" />
               </div>
-              <Pie data={data} className={styles.piechart} />
+              <Pie data={data} className={styles.piechart} options={options} />
             </div>
           </div>
+        </div>
+      </div>
+      <div className={styles.dashboard_container_content4}>
+        <div className={styles.dashboard_container_content4_table}>
+          <div className={styles.dashboard_container_content4_table_top}>
+            <h1>All Registered Users</h1>
+            <div
+              className={
+                styles.dashboard_container_content4_table_top_inputfield
+              }
+            >
+              <input type="search" placeholder="search by Name" />
+              <img src={search} alt="Icon " />
+            </div>
+          </div>
+        </div>
+        <div className={styles.dashboard_container_content4_table_content}>
+          <table>
+            <thead>
+              <tr>
+                <th>Tracking no</th>
+                <th>User Name</th>
+                <th>Price</th>
+                <th>No of Signature</th>
+                <th>Tatal Payment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#87634</td>
+                <td>
+                  <img src={tableUserImage} alt="ImgIcon" />
+                  <h6>jane doe</h6>
+                </td>
+                <td>$400.00</td>
+                <td>
+                  <span>10</span>
+                </td>
+                <td>$6,000.000</td>
+              </tr>
+              <tr>
+                <td>#87634</td>
+                <td>
+                  <img src={tableUserImage} alt="ImgIcon" />
+                  <h6>jane doe</h6>
+                </td>
+                <td>$400.00</td>
+                <td>
+                  <span>10</span>
+                </td>
+                <td>$6,000.000</td>
+              </tr>
+              <tr>
+                <td>#87634</td>
+                <td>
+                  <img src={tableUserImage} alt="ImgIcon" />
+                  <h6>jane doe</h6>
+                </td>
+                <td>$400.00</td>
+                <td>
+                  <span>10</span>
+                </td>
+                <td>$6,000.000</td>
+              </tr>
+              <tr>
+                <td>#87634</td>
+                <td>
+                  <img src={tableUserImage} alt="ImgIcon" />
+                  <h6>jane doe</h6>
+                </td>
+                <td>$400.00</td>
+                <td>
+                  <span>10</span>
+                </td>
+                <td>$6,000.000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
