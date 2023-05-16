@@ -4,10 +4,6 @@ import { Header, Sidebar } from "../components";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
-  // const [isSideOpen, setIsSideOpen] = useState(false);
-  // const handler = () => {
-  //   setIsSideOpen((previous) => !previous);
-  // };
   return (
     <>
       {/* ******************** Responsive Navbar ************************** */}

@@ -18,7 +18,6 @@
     // background-color: aqua;
     margin-top: 5rem;
     ul {
-      list-style-type: none;
       cursor: pointer;
       li {
         display: flex;
@@ -32,9 +31,8 @@
           // background-color: red;
         }
         .text {
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: 300;
+          // font-style: normal;
+          font-weight: 600;
           font-size: 1.6rem;
           color: #858585;
         }
@@ -65,4 +63,7 @@
       font-size: 0.8rem;
     }
   }
+}
+.link{
+  text-decoration: none;
 }

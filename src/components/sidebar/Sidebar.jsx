@@ -61,7 +61,7 @@ const Sidebar = () => {
             {data.map((item, ind) => {
               return (
                 <li key={ind}>
-                  <Link to={item.path}>
+                  <Link to={item.path} className={styles.Link}>
                     <span className={styles.icon}>
                       <img src={item.icon} alt="Icon" />
                     </span>

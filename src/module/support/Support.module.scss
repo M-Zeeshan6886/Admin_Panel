@@ -5,7 +5,8 @@
   padding: 1rem 0rem;
   width: 100%;
   height: auto;
-  background-color: #15c2eda0;
+  background-color: #15c2ed49;
+  padding-bottom: 1.5rem;
   &_top {
     width: 95%;
     margin: auto;
@@ -32,9 +33,15 @@
     justify-content: space-between;
     padding: 0.5rem 0rem;
     // background-color: aqua;
+    @include respond(phone) {
+      flex-direction: column;
+    }
     &_left {
-      width: 50%;
+      width: 70%;
       // background-color: lightcoral;
+      @include respond(phone) {
+        width: 100%;
+      }
       table {
         width: 100%;
         th,
@@ -74,6 +81,89 @@
       }
       img {
         margin-left: -1.5rem;
+      }
+    }
+  }
+  &_bottom {
+    width: 95%;
+    margin: auto;
+    margin-top: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    &_left {
+      width: 75%;
+
+      & > table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0rem;
+        // background-color: red;
+        & > thead {
+          & > tr {
+            & > th {
+              text-align: left;
+              font-size: 1.3rem;
+              color: $lightnevi;
+              font-weight: 600;
+              white-space: nowrap;
+              padding: 0rem $spacing-unit * 3;
+              padding-bottom: $spacing-unit * 3;
+              // background-color: #6ec4cf;
+              &:nth-child(1) {
+                width: 28%;
+              }
+              &:nth-child(2) {
+                width: 17%;
+              }
+              &:nth-child(3) {
+                width: 15%;
+              }
+              &:nth-child(4) {
+                width: 25%;
+              }
+              &:nth-child(5) {
+                background-color: #8a8a8a;
+                width: 10%;
+              }
+            }
+          }
+        }
+        & > tbody {
+          & > tr {
+            & > td {
+              text-align: left;
+              font-size: 1.2rem;
+              color: $lightnevi;
+              font-weight: 500;
+              white-space: nowrap;
+              padding: 1.5rem 1.5rem;
+              // background-color: red;
+              border-bottom: 1px solid rgba(152, 152, 152, 0.392);
+              &:last-child {
+                text-align: right;
+                font-size: 1.2rem;
+              }
+              &:nth-child(2) {
+                color: #6ec4cf;
+              }
+            }
+
+            &:not(:last-child) {
+              & > td {
+                border-bottom: 0.2rem solid, #6ec4cf;
+              }
+            }
+          }
+        }
+      }
+    }
+    &_right {
+      p {
+        font-size: 1rem;
+        line-height: 12px;
+        color: #2b4465;
+        margin-right: 7rem;
       }
     }
   }
