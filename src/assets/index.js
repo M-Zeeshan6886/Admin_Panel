@@ -20,6 +20,7 @@ import darkBlueImage from "../assets/darkBlueImage.svg";
 import grayImage from "../assets/grayImage.svg";
 import blueImage from "../assets/blueImage.svg";
 import Checkbox from "../assets/checkBox.svg";
+import Share from "../assets/share.svg";
 
 export {
   line,
@@ -44,4 +45,5 @@ export {
   grayImage,
   blueImage,
   Checkbox,
+  Share,
 };

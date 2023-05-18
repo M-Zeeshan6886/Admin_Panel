@@ -5,9 +5,9 @@
 
 .responsive_container {
   background-color: #5c718d71;
-  // opacity: 0.2;
   position: fixed;
   inset: 0;
+  // width: 100%;
   z-index: 99;
   backdrop-filter: blur(5px);
   display: none;

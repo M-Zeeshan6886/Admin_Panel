@@ -1,0 +1,100 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+// ************************Forget Popup *********************************
+.success_popup {
+  position: absolute;
+  width: 318px;
+  height: 72px;
+  // left: 15px;
+  // top: 100px;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bff2fe;
+  border-radius: 8px;
+  & > p {
+    width: 80%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 19px;
+    text-align: center;
+    color: #8a8a8a;
+  }
+}
+
+// ************************ Change Password Container *********************************
+
+.Changepasword_container {
+  height: 100vh;
+  background-image: url("../../assets/settingBackgroundImage.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parentContainer {
+  width: 41.5rem;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: lavenderblush;
+  h1 {
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 35px;
+    text-align: center;
+    color: #2b4465;
+  }
+  p {
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 19px;
+    color: #8a8a8a;
+  }
+  &_childContainer {
+    position: relative;
+    width: 38rem;
+    height: auto;
+    margin: auto;
+    padding: 2rem 2rem;
+    background-color: white;
+    border-radius: 9.675px;
+    margin-top: 2.9rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 24px;
+      color: #00cbfe;
+      margin-bottom: 12px;
+    }
+    p {
+      width: 70%;
+      text-align: center;
+      margin-top: 21px;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 19px;
+      color: #8a8a8a;
+    }
+  }
+}
+.btn {
+  width: 100%;
+  height: 42.35px;
+  background: #4edafc;
+  border-radius: 9.675px;
+  color: white;
+  font-weight: 800;
+  font-size: 1.9rem;
+  line-height: 23px;
+  border: none;
+  cursor: pointer;
+  margin-top: 27px;
+}

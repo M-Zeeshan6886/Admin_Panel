@@ -1,4 +1,5 @@
 import "./App.css";
+import { ChangePasword } from "./components";
 import Layout from "./layout/Layout";
 import {
   Dashboard,
@@ -21,6 +22,7 @@ function App() {
             <Route path="/subscription" element={<Subscription />} />
             <Route path="/manageEmployee" element={<Manageempolyee />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/changepasword" element={<ChangePasword />} />
           </Route>
         </Routes>
       </BrowserRouter>

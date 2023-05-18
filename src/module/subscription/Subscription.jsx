@@ -72,26 +72,6 @@ const Subscription = () => {
           </select>
         </div>
         <div className={styles.subscription_container_middle}>
-          {/* <div className={styles.subscription_container_middle_left}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Employees Status</th>
-                  <th>Groups</th>
-                  <th>Status</th>
-                  <th>Assigned Signature</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Non Archived</td>
-                  <td>All group</td>
-                  <td>status</td>
-                  <td>All Signature</td>
-                </tr>
-              </tbody>
-            </table>
-          </div> */}
           <div className={styles.subscription_container_middle_right}>
             <input type="search" placeholder="Search by Name" />
             <img src={search} alt="Icon" />

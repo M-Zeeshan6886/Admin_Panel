@@ -74,7 +74,9 @@ const Settings = () => {
             </Formik>
             <div className={styles.parentContainer_childContainer_auth}>
               <p>Two factor authentication</p>
-              <img src={Checkbox} alt="Ipcn" />
+              <Link to="/changepasword">
+                <img src={Checkbox} alt="Ipcn" />
+              </Link>
             </div>
           </div>
         </div>

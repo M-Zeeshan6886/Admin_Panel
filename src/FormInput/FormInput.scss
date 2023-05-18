@@ -13,13 +13,11 @@
   }
   &-input {
     width: 100%;
-
-    background: #bbeefa;
-    // border-radius: 4.8375px;
-    // opacity: 0.4;
     padding: 0.7rem 0.8rem;
     margin-bottom: 19px;
+    background: rgba(249, 249, 249, 0.8);
     border: 1.20938px solid #eeeeee;
+    border-radius: 4.8375px;
     color: #2b4465;
 
     &:focus {
