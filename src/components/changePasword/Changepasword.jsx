@@ -11,15 +11,6 @@ const ChangePasword = () => {
   };
   return (
     <>
-      {/* ######################## Change Success Popup #################################### */}
-
-      {Fpopup ? (
-        <div className={styles.success_popup}>
-          <p>Your password has been changed successfully!</p>
-        </div>
-      ) : (
-        ""
-      )}
       {/* ######################## Change Password Container ############################ */}
       <div className={styles.Changepasword_container}>
         <div className={styles.parentContainer}>
@@ -28,7 +19,18 @@ const ChangePasword = () => {
           <div className={styles.parentContainer_childContainer}>
             <h1>Email Sent</h1>
             <img src={Share} alt="Icon" />
+            {/* ######################## Change Success Popup #################################### */}
+
+            {Fpopup ? (
+              <div className={styles.success_popup}>
+                <p>Your password has been changed successfully!</p>
+              </div>
+            ) : (
+              ""
+            )}
+            {/* ####################### */}
             <p>Enter your six digit code sent on the given email</p>
+
             <OTPInput
               value={otp}
               onChange={setOtp}

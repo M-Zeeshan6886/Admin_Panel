@@ -1,19 +1,22 @@
 @import "../../Sass/mixin";
 @import "../../Sass/variables";
 
-// ************************Forget Popup *********************************
+// ************************Change successfully Popup *********************************
 .success_popup {
   position: absolute;
-  width: 318px;
-  height: 72px;
-  // left: 15px;
-  // top: 100px;
+  width: 31.8rem;
+  height: 7.2rem;
+  left: 30px;
+  top: 90px;
   z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #bff2fe;
   border-radius: 8px;
+  @include respond(phone) {
+    left: 25px;
+  }
   & > p {
     width: 80%;
     font-weight: 400;
