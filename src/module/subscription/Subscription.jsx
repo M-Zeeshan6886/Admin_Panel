@@ -59,6 +59,13 @@ const Subscription = () => {
       ASignature: "My Card",
       Img: deleteIcon,
     },
+    {
+      empName: "Joseph carter",
+      group: "Abcd@mail.com",
+      status: "Company",
+      ASignature: "My Card",
+      Img: deleteIcon,
+    },
   ];
   return (
     <>
