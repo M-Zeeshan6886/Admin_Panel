@@ -6,6 +6,9 @@
   width: 100%;
   height: 100vh;
   background-color: #15c2ed49;
+  @include respond(phone) {
+    height: auto;
+  }
   &_top {
     width: 95%;
     margin: auto;
@@ -178,6 +181,10 @@
   background: #e7e7e7;
   border-radius: 5px;
   padding: 1.5rem 1rem;
+  @include respond(phone) {
+    right: 0%;
+    left: 10px;
+  }
   h1 {
     font-weight: 700;
     font-size: 1.2rem;
